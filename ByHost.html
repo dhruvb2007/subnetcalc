@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPv4 Subnet Calculator by Total Hosts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body >
+    <nav class="w-full h-14 flex items-center px-4 md:px-10 bg-white  ">
+        <h1 class="font-medium text-lg md:text-2xl">IPv4 Subnet Calculator</h1>
+    </nav>
+    <section class="flex flex-col items-center w-full min-h-[calc(100vh-3.5rem)] p-4 md:p-8">
+        <div class="w-full max-w-4xl space-y-6 md:space-y-0">
+            <!-- Step 1: Input Values -->
+            <div class="bg-white rounded-lg p-4 md:p-6  ">
+                <h2 class="text-lg md:text-xl font-medium mb-4">1. Input Values</h2>
+                <div id="inputValues" class="space-y-2"></div>
+            </div>
+
+            <!-- Step 2: IP Class and Default Mask -->
+            <div class="bg-white rounded-lg p-4 md:p-6  ">
+                <h2 class="text-lg md:text-xl font-medium mb-4">2. IP Class and Default Mask</h2>
+                <div id="ipClassInfo" class="space-y-2"></div>
+            </div>
+
+            <!-- Step 3: Host Bits Calculation -->
+            <div class="bg-white rounded-lg p-4 md:p-6  ">
+                <h2 class="text-lg md:text-xl font-medium mb-4">3. Host Bits Calculation</h2>
+                <div id="hostBits" class="space-y-2"></div>
+            </div>
+
+            <!-- Step 4: New Subnet Mask -->
+            <div class="bg-white rounded-lg p-4 md:p-6  ">
+                <h2 class="text-lg md:text-xl font-medium mb-4">4. New Subnet Mask</h2>
+                <div id="newSubnetMask" class="space-y-2"></div>
+            </div>
+
+            <!-- Step 5: Network Address Calculation -->
+            <div class="bg-white rounded-lg p-4 md:p-6  ">
+                <h2 class="text-lg md:text-xl font-medium mb-4">5. Network Address Calculation</h2>
+                <div id="networkCalc" class="space-y-2"></div>
+            </div>
+
+            <!-- Step 6: Network Details -->
+            <div class="bg-white rounded-lg p-4 md:p-6  ">
+                <h2 class="text-lg md:text-xl font-medium mb-4">6. Network Details</h2>
+                <div id="networkDetails" class="space-y-2"></div>
+            </div>
+
+            <!-- Step 7: Subnet Ranges -->
+            <div class="bg-white rounded-lg p-4 md:p-6  ">
+                <h2 class="text-lg md:text-xl font-medium mb-4">7. Subnet Ranges</h2>
+                <div id="subnetRanges" class="space-y-2"></div>
+            </div>
+
+            <button onclick="window.location.href='index.html'" class="bg-black hover:bg-gray-800 p-3 w-full rounded-md text-white mt-4 transition-colors duration-200">Back to Home</button>
+        </div>
+    </section>
+    <script src="ByHost.js"></script>
+</body>
+</html>
